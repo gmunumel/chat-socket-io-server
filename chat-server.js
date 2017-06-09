@@ -1,5 +1,5 @@
 
-PORT    = 5001;
+PORT    = $PORT || 5001;
 CHANNEL = 'messages';
 
 console.log('Node Server Running... | PORT: ' + PORT);
