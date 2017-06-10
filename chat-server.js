@@ -1,12 +1,17 @@
 
-PORT    = $PORT || 5001;
-CHANNEL = 'messages';
+PORT      = process.env.PORT || 5001;
+REDIS_URL = process.env.REDIS_URL || null;
+CHANNEL   = 'messages';
 
 console.log('Node Server Running... | PORT: ' + PORT);
 
+var options = {
+  url: REDIS_URL
+};
+
 function GoChatServer() {
   var io = require('socket.io').listen(PORT);
-  var redis = require('redis').createClient();
+  var redis = require('redis').createClient(options);
 
   redis.subscribe(CHANNEL);
 

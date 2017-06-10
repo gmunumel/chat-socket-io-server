@@ -2,9 +2,6 @@
   "name": "socket-io-server",
   "version": "0.0.1",
   "description": "My chat socket.io app",
-  "engines": {
-    "node": "7.8.0"
-  },
   "directories": {
     "test": "test"
   },

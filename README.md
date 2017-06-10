@@ -13,7 +13,7 @@ Cointains node server functionality which subscribe to channels on redis and emi
 
 ## License
 
-Licensed under [MIT](../LICENSE.md)
+Licensed under [MIT](LICENSE.md)
 
 
 Based on the following tutorials: 
