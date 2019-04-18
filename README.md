@@ -2,6 +2,8 @@
 
 Cointains node server functionality which subscribe to channels on redis and emit messages using socket.io library.
 
+Part of https://github.com/gmunumel/chat-socketio-rails project
+
 ## Installation
 ```bundle install```
 
